@@ -1,5 +1,11 @@
 \documentclass[showtrims,11pt,conselho,spreadimages]{memoir}
 
+\makeatletter
+\def\@xfootnote[#1]{%
+  \protected@xdef\@thefnmark{#1}%
+  \@footnotemark\@footnotetext}
+\makeatother
+
 \usepackage{commands}
 \usepackage[bolso]{hedra} %% << %%%%%%%%%%%%%%%%
 \usepackage{gitrevisioninfo}
