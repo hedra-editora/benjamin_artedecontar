@@ -1,14 +1,20 @@
 \documentclass[showtrims,11pt,conselho,spreadimages]{memoir}
 
+
+\usepackage{commands}
+\usepackage[bolso]{hedra} %% << %%%%%%%%%%%%%%%%
+\usepackage{gitrevisioninfo}{}
+\usepackage{penalidades}
+
+\newcommand{\signature}[1]{{\par\nobreak
+      \smallskip\hfill#1\par
+  }}
+
 \makeatletter
 \def\@xfootnote[#1]{%
   \protected@xdef\@thefnmark{#1}%
   \@footnotemark\@footnotetext}
 \makeatother
-
-\usepackage{commands}
-\usepackage[bolso]{hedra} %% << %%%%%%%%%%%%%%%%
-\usepackage{gitrevisioninfo}
 
 \begin{document}
 
